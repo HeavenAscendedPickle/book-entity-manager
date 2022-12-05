@@ -13,4 +13,6 @@ public interface AuthorRepository {
     
     Author save(Author author);
 
+    boolean existsById(String authorName);
+
 }

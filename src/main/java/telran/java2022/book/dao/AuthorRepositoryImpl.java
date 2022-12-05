@@ -32,4 +32,9 @@ public class AuthorRepositoryImpl implements AuthorRepository {
 	return author;
     }
 
+    @Override
+    public boolean existsById(String authorName) {
+	return em.find(Author.class, authorName) != null;
+    }
+
 }
